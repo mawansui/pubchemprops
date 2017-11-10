@@ -38,7 +38,7 @@ What's with the layers?
 
 Just couldn't find any better name for that :] PRs much welcomed if you have another suggestion, though.
 
-Basically what it means is that **first layer** properties are **easy** to retrieve, because there is a clear API for that. Here is the list of these properties:
+Basically what it means is that **first layer** properties are **easy** to retrieve, because there is a clear API for that. Here is the list of these properties: 
 
 ``MolecularFormula, MolecularWeight, CanonicalSMILES, IsomericSMILES, InChI, InChIKey, IUPACName, XLogP, ExactMass, MonoisotopicMass, TPSA, Complexity, Charge, HBondDonorCount, HBondAcceptorCount, RotatableBondCount, HeavyAtomCount, IsotopeAtomCount, AtomStereoCount, DefinedAtomStereoCount, UndefinedAtomStereoCount, BondStereoCount, DefinedBondStereoCount, UndefinedBondStereoCount, CovalentUnitCount, Volume3D, XStericQuadrupole3D, YStericQuadrupole3D, ZStericQuadrupole3D, FeatureCount3D, FeatureAcceptorCount3D, FeatureDonorCount3D, FeatureAnionCount3D, FeatureCationCount3D, FeatureRingCount3D, FeatureHydrophobeCount3D, ConformerModelRMSD3D, EffectiveRotorCount3D, ConformerCount3D, Fingerprint2D``
 
@@ -72,12 +72,12 @@ TODOs
 There is still a lot of work to be done:
 
 1. Add error handlers – oftentimes users will not provide a correct compound name due to typos or whatever, so we'd need to add some handlers for that. Ain't got none at the moment.
-2. Add more functionality – there are still lots of things one can retrieve from PubChem: images, spectra, bioinformation...
+2. Add more functionality – there are still lots of things one can retrieve from PubChem: images, spectra, bioinformation... 
 3. Write better docs maybe
 4. Make the data returned look better and easier to read
 5. ???
 6. PROFIT!
 
-PRs are very much welcomed, also feel free to open any issues or start discussions.
+PRs are very much welcomed, also feel free to open any issues or start discussions. 
 
 Hope you like the package!
