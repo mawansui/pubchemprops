@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='pubchemprops',
-    version='0.1',
+    version='0.1.1',
     packages=['pubchemprops'],
     url='https://github.com/mawansui/pubchemprops',
     license='MIT',

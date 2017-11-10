@@ -8,7 +8,7 @@
 	https://pubchem.ncbi.nlm.nih.gov/pug_rest/PUG_REST.html
 """
 
-import urllib.request, json, requests
+import urllib.request, json
 
 
 def pubchem_parsing(url):
