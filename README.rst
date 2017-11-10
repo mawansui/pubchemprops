@@ -23,6 +23,14 @@ Installation
 
 ``pip install pubchemprops``
 
+or
+
+``pip3 install pubchemprops``
+
+if you have several Python versions installed.
+
+Please keep in mind that this package is written in Python 3, so, sadly, it won't work if you only have Python 2.x installed. Raise an issue if you'd like to see this kind of back-version support implemented, though, and we will see what we can do. :)
+
 Usage
 -----
 ``from pubchemprops.pubchemprops import X`` ,
@@ -32,6 +40,19 @@ where X is one of the following functions:
 - ``get_cid_by_name`` – takes a compound name, searches PubChem for it and returns it's PubChem ID
 - ``get_first_layer_props`` – takes a compound name and a list of required parameters that CAN be retreived directly using the amazing PubChem PUG REST API
 - ``get_second_layer_props`` - takes a compound name and a list of required parameters that CAN NOT be retreived directly and for which one would have to look for in the depth of the whole PubChem record for the compound
+
+Getting the Compund ID (CID) by name
+------------------------------------
+
+This is a pretty simple task, but it may be useful if you would like to do something else with PubChem – that is, something this module cannot yet do.
+
+Use it like that: 
+
+``print(get_cid_by_name('acetone'))``
+
+The function accepts a compound's name (can be either IUPAC or rational) and returns its PubChem CID. 
+
+``180``
 
 What's with the layers?
 -----------------------
