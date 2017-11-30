@@ -6,20 +6,24 @@ PubChemProps
 
 **Documentation:**
 
-1. Why?
-2. Installation
-3. Usage
-4. TODOs
+- `Why?`_
+- `Installation`_
+- `Usage`_
+    #. `Getting the Compund ID (CID) by name`_
+    #. `What's with the layers?`_
+- `TODOs`_
 
+=====
 Why?
-----
+=====
 
 Why, indeed, do we need another PubChem-related python package? The answer is that I've found the `available one`__ not quite fitting my needs. While the mentioned package offers a wide range of possible uses and allows to retrieve various **computed** parameters, it does not allow to retrieve any **experimental** ones. So I decided to write my own package that would do exactly that!
 
 __ https://pypi.python.org/pypi/PubChemPy/1.0.4
 
+======
 Installation
-------------
+======
 
 ``pip install pubchemprops``
 
@@ -31,8 +35,9 @@ if you have several Python versions installed.
 
 Please keep in mind that this package is written in Python 3, so, sadly, it won't work if you only have Python 2.x installed. Raise an issue if you'd like to see this kind of back-version support implemented, though, and we will see what we can do. :)
 
+=======
 Usage
------
+=======
 ``from pubchemprops.pubchemprops import X`` ,
 
 where X is one of the following functions:
@@ -41,6 +46,7 @@ where X is one of the following functions:
 - ``get_first_layer_props`` – takes a compound name and a list of required parameters that CAN be retreived directly using the amazing PubChem PUG REST API
 - ``get_second_layer_props`` - takes a compound name and a list of required parameters that CAN NOT be retreived directly and for which one would have to look for in the depth of the whole PubChem record for the compound
 
+------------------------------------
 Getting the Compund ID (CID) by name
 ------------------------------------
 
@@ -54,6 +60,7 @@ The function accepts a compound's name (can be either IUPAC or rational) and ret
 
 ``180``
 
+-----------------------
 What's with the layers?
 -----------------------
 
@@ -87,8 +94,9 @@ Looking messier than the first layer props return, but I didn't call 'em the sec
 
 Still this is much better than having no info at all!
 
+=====
 TODOs
------
+=====
 
 There is still a lot of work to be done:
 
